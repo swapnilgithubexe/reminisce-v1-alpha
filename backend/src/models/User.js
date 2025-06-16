@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 
 const userSchema = new mongoose.Schema({
-  fullname: {
+  fullName: {
     type: String,
     // ! This is a schema level validation... we have to add the controller level validation too..
     required: [true, "Full name is required"]
@@ -51,7 +51,7 @@ const userSchema = new mongoose.Schema({
   //for created At and Updated at fields
 })
 
-// TODO: Add a compare method to quickly access it
+// TODO: Add a compare method to quickly access and compare it
 
 //pre-hook for hashing password
 userSchema.pre("save", async function (next) {
