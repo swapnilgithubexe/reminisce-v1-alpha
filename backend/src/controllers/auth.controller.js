@@ -61,8 +61,8 @@ export const signUp = async (req, res) => {
     //cookie config
     res.cookie("jwt", token, {
       maxAge: 7 * 24 * 60 * 60 * 1000,
-      httpOnly: true, //for XSS attacks
-      sameSite: "strict", //for CSRF attacks
+      httpOnly: true, //! for XSS attacks
+      sameSite: "strict", //! for CSRF attacks
       secure: process.env.NODE_ENV === "production",
     });
 
@@ -80,3 +80,62 @@ export const signUp = async (req, res) => {
     });
   }
 };
+
+//login method
+export const login = async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    if (!email || !password) {
+      return res.status(400).json({
+        message: "All fields are required"
+      })
+    }
+
+    const existingUser = await User.findOne({ email });
+
+    if (!existingUser) {
+      return res.status(401).json({
+        message: "Invalid email or password"
+      })
+    }
+
+    const isPasswordCorrect = await existingUser.matchpassword(password);
+
+    if (!isPasswordCorrect) {
+      return res.status(401).json({
+        message: "Invalid email or password"
+      })
+    }
+
+    //! token
+    const token = jwt.sign({ userId: existingUser._id }, process.env.JWT_SECRET_KEY, {
+      expiresIn: "7d"
+    })
+
+    res.cookie("jwt", token, {
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+      httpOnly: true, //! XSS attack prevention
+      sameSite: "strict", //! CSRF attacks
+      secure: process.env.NODE_ENV === "production"
+    })
+
+    res.status(200).json({
+      success: true,
+      existingUser
+    })
+
+  } catch (error) {
+    console.log("Error in the login controller function", error.message);
+    res.status(500).json({
+      message: "Internal server error"
+    })
+  }
+}
+
+//Logout 
+
+export const logout = (req, res) => {
+  res.clearCookie("jwt");
+  res.status(200).json({ message: "logout successful" })
+}
