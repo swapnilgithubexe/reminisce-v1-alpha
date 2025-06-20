@@ -1,6 +1,7 @@
 import { upsertStreamUser } from "../lib/stream.js";
 import { User } from "../models/User.js";
 import jwt from "jsonwebtoken";
+import logger from "../utils/logger.js";
 
 export const signUp = async (req, res) => {
   const { email, password, fullName } = req.body;
@@ -62,7 +63,7 @@ export const signUp = async (req, res) => {
 
     }
 
-    //token with userId as payload
+    //! token with userId as payload
     const token = jwt.sign(
       {
         userId: newUser._id,
@@ -73,7 +74,7 @@ export const signUp = async (req, res) => {
       }
     );
 
-    //cookie config
+    //! cookie config
     res.cookie("jwt", token, {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       httpOnly: true, //! for XSS attacks
@@ -81,13 +82,15 @@ export const signUp = async (req, res) => {
       secure: process.env.NODE_ENV === "production",
     });
 
-    //resource created
+    // ! resource created
     res.status(201).json({
       success: true,
       user: newUser,
     });
+    logger.info(`User registered, welcome! ${newUser.fullName}`);
   } catch (error) {
     console.log("Dev Mode-> Debug-> Error in the sign up controller function");
+    logger.error(error.message);
     console.log(error);
 
     res.status(500).json({
@@ -138,10 +141,14 @@ export const login = async (req, res) => {
     res.status(200).json({
       success: true,
       existingUser
-    })
+    });
+
+    //! Loggin login
+    logger.info(`${existingUser.fullName} just logged in.`)
 
   } catch (error) {
-    console.log("Error in the login controller function", error.message);
+    // console.log("Error in the login controller function", error.message);
+    logger.error(error.message);
     res.status(500).json({
       message: "Internal server error"
     })
@@ -151,6 +158,7 @@ export const login = async (req, res) => {
 //Logout 
 
 export const logout = (req, res) => {
+  logger.info("Logout request made")
   res.clearCookie("jwt");
   res.status(200).json({ success: true, message: "logout successful" })
 }
