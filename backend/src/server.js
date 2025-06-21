@@ -5,10 +5,12 @@ import express from "express";
 import { authRouter } from "./routes/auth.route.js";
 import { connectDatabase } from "./lib/db.js";
 import logger from "./utils/logger.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.get("/", (req, res) => {
   res.send("Health Check")
