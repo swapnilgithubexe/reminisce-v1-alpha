@@ -89,7 +89,7 @@ export const signUp = async (req, res) => {
     });
     logger.info(`User registered, welcome! ${newUser.fullName}`);
   } catch (error) {
-    console.log("Dev Mode-> Debug-> Error in the sign up controller function");
+    // console.log("Dev Mode-> Debug-> Error in the sign up controller function");
     logger.error(error.message);
     console.log(error);
 
@@ -110,6 +110,7 @@ export const login = async (req, res) => {
       })
     }
 
+    //! check if user already exists
     const existingUser = await User.findOne({ email });
 
     if (!existingUser) {
@@ -118,6 +119,7 @@ export const login = async (req, res) => {
       })
     }
 
+    //! match password
     const isPasswordCorrect = await existingUser.matchpassword(password);
 
     if (!isPasswordCorrect) {
@@ -147,7 +149,6 @@ export const login = async (req, res) => {
     logger.info(`${existingUser.fullName} just logged in.`)
 
   } catch (error) {
-    // console.log("Error in the login controller function", error.message);
     logger.error(error.message);
     res.status(500).json({
       message: "Internal server error"
