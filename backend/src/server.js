@@ -6,6 +6,7 @@ import { authRouter } from "./routes/auth.route.js";
 import { connectDatabase } from "./lib/db.js";
 import logger from "./utils/logger.js";
 import cookieParser from "cookie-parser";
+import { userRouter } from "./routes/user.routes.js";
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 
 //routes
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/auth", userRouter);
 
 app.listen(process.env.PORT, () => {
   //TODO: In production mode add the below commented line
