@@ -9,3 +9,11 @@ authRouter.post("/login", login);
 authRouter.post("/logout", logout);
 
 authRouter.post("/onboarding", protectedRoute, onBoard);
+
+//! health check & auth route
+authRouter.get("/me", protectedRoute, (req, res) => {
+  res.status(200).json({
+    success: true,
+    user: req.user
+  })
+})

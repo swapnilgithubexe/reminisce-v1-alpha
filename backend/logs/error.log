@@ -1,2 +1,3 @@
 {"level":"error","message":"All fields are required while onboarding","timestamp":"2025-06-21T19:22:13.894Z"}
 {"level":"error","message":"All fields are required while onboarding","timestamp":"2025-06-21T19:22:56.809Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-06-21T20:14:26.590Z"}

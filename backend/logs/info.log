@@ -1,3 +1,8 @@
 {"level":"info","message":"Stream profile is created for John Doe","timestamp":"2025-06-21T09:40:05.302Z"}
 {"level":"info","message":"User registered, welcome! John Doe","timestamp":"2025-06-21T09:40:05.317Z"}
 {"level":"info","message":"John Doe just logged in.","timestamp":"2025-06-21T18:58:20.534Z"}
+{"level":"info","message":"Stream user has been updated successfully for johndoe2","timestamp":"2025-06-21T19:32:06.430Z"}
+{"level":"info","message":"Onboarding successful for johndoe2","timestamp":"2025-06-21T19:32:06.447Z"}
+{"level":"info","message":"Stream user has been updated successfully for john doe","timestamp":"2025-06-21T19:33:08.774Z"}
+{"level":"info","message":"Onboarding successful for john doe","timestamp":"2025-06-21T19:33:08.776Z"}
+{"level":"info","message":"Logout request made","timestamp":"2025-06-21T20:14:22.555Z"}
