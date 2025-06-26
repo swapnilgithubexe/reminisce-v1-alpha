@@ -234,5 +234,8 @@ export const onBoard = async (req, res) => {
     console.log(error.message);
 
     logger.error("Onboarding error: ", error.message);
+    res.status(500).json({
+      message: "Internal server error",
+    });
   }
 };

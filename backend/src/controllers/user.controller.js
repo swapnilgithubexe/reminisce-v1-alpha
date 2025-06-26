@@ -25,6 +25,9 @@ export const getRecommendedUsers = async (req, res) => {
     res.status(200).json(recommendedUsers);
   } catch (error) {
     logger.error("Error in get recommended users controller function: ", error.message);
+    res.status(500).json({
+      message: "Internal server error",
+    });
   }
 }
 
@@ -37,6 +40,9 @@ export const getMyFriends = async (req, res) => {
     res.status(200).json(user.friends);
   } catch (error) {
     logger.error("Error in get recommended users controller function: ", error.message);
+    res.status(500).json({
+      message: "Internal server error",
+    });
   }
 }
 
@@ -100,5 +106,96 @@ export const sendFriendRequest = async (req, res) => {
     res.status(201).json(friendRequest);
   } catch (error) {
     logger.error(error.message);
+    res.status(500).json({
+      message: "Internal server error",
+    });
+  }
+}
+
+// acceptFriendRequest
+export const acceptFriendRequest = async (req, res) => {
+  try {
+    const { id: requestId } = req.params;
+    const friendRequest = await FriendRequest.findById(requestId);
+
+    if (!friendRequest) {
+      logger.error("Friend request not found");
+      return res.status(404).json({
+        message: "Friend request not found"
+      })
+    }
+
+    //! check to ensure that the current user is the recipient
+    if (friendRequest.recipient.toString() !== req.user.id) {
+      //! it means if the instance of the friend request has me has its recipient than this request belongs to me
+      logger.error("You are not authorized to accept this friend request");
+      return res.status(403).json({
+        message: "You are not authorized to accept this friend request"
+      })
+    }
+
+    friendRequest.status = "accepted";
+    await friendRequest.save();
+
+    //! since the requested has been accepted we need to update the firends array in both of their accounts
+    await User.findByIdAndUpdate(friendRequest.sender, {
+      $addToSet: { friends: friendRequest.recipient }
+    })
+    //! We can also use $push but it might create a duplicate entity, if by chance the request is hit twice
+    await User.findByIdAndUpdate(friendRequest.recipient, {
+      $addToSet: { friends: friendRequest.sender }
+    })
+
+    logger.info(`Friend request accepted`);
+    res.status(200).json({
+      message: `Friend request accepted`
+    })
+  } catch (error) {
+    logger.error(error.message);
+    res.status(500).json({
+      message: "Internal server error",
+    });
+  }
+}
+
+export const getFriendRequests = async (req, res) => {
+  try {
+    const incomingRequests = await FriendRequest.find({
+      recipient: req.user.id,
+      status: "pending",
+    }).populate("sender", "fullName profilePic nativeLanguage leraningLanguage");
+
+    const acceptedRequests = await FriendRequest.find({
+      sender: req.user.id,
+      status: "accepted"
+    }).populate("recipient", "fullName profilePic")
+
+    logger.info("Incoming and Accepted requests have been fetched")
+
+    res.status(200).json({
+      incomingRequests, acceptedRequests
+    })
+
+
+  } catch (error) {
+    logger.error(error.message);
+  }
+}
+
+export const getOutgoingRequests = async (req, res) => {
+  try {
+    const outgoingRequests = await FriendRequest.find({
+      sender: req.user.id,
+      status: "pending"
+    }).populate("recipient", "fullName profilePic nativaLanguage learningLanguage")
+
+    logger.info("Outgoing requests has been fetched");
+
+    res.status(200).json(outgoingRequests);
+  } catch (error) {
+    logger.error(error.message);
+    res.status(500).json({
+      message: "Internal server error",
+    });
   }
 }
