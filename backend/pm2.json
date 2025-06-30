@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "reminisce",
+      "script": "./server.js",
+      "instances": "max",
+      "exec_mode": "cluster",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "out_file": "./logs/combined.log",
+      "error_file": "./logs/error.log",
+      "max_restarts": 5,
+      "restart_delay": 10000,
+      "watch": false,
+      "min_uptime": 5000,
+      "max_memory_restart": "500M",
+      "post_update": [
+        "npm install",
+        "pm2 install pm2-logrotate",
+        "pm2 set pm2-logrotate:max_size 10M",
+        "pm2 set pm2-logrotate:retain 7"
+      ],
+      "shutdown_with_message": true
+    }
+  ]
+}
