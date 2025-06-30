@@ -7,6 +7,7 @@ import { connectDatabase } from "./lib/db.js";
 import logger from "./utils/logger.js";
 import cookieParser from "cookie-parser";
 import { userRouter } from "./routes/user.routes.js";
+import { globalApiLimiter } from "./middlewares/rateLimiter.middleware.js";
 
 const app = express();
 
@@ -16,6 +17,9 @@ app.use(cookieParser());
 app.get("/", (req, res) => {
   res.send("Health Check")
 })
+
+//! Global Api rate Limiter
+app.use("/api", globalApiLimiter)
 
 //routes
 app.use("/api/v1/auth", authRouter);
