@@ -8,6 +8,7 @@ import logger from "./utils/logger.js";
 import cookieParser from "cookie-parser";
 import { userRouter } from "./routes/user.routes.js";
 import { globalApiLimiter } from "./middlewares/rateLimiter.middleware.js";
+import { chatRouter } from "./routes/chat.route.js";
 
 const app = express();
 
@@ -23,7 +24,8 @@ app.use("/api", globalApiLimiter)
 
 //routes
 app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/auth", userRouter);
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/chat", chatRouter);
 
 app.listen(process.env.PORT, () => {
   //TODO: In production mode add the below commented line
