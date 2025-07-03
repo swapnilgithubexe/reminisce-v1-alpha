@@ -1,7 +1,17 @@
 import React from "react";
 
 const App = () => {
-  return <div className="bg-red-300 h-screen">App</div>;
+  return (
+    <div className="bg-red-200 h-screen" data-theme="luxury">
+      <button className="btn">Button</button>
+      <button className="btn btn-neutral">Neutral</button>
+      <button className="btn btn-primary">Primary</button>
+      <button className="btn btn-secondary">Secondary</button>
+      <button className="btn btn-accent">Accent</button>
+      <button className="btn btn-ghost">Ghost</button>
+      <button className="btn btn-link">Link</button>
+    </div>
+  );
 };
 
 export default App;
