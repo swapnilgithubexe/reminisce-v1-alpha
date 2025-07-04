@@ -6,3 +6,13 @@
 {"level":"info","message":"Stream user has been updated successfully for john doe","timestamp":"2025-06-21T19:33:08.774Z"}
 {"level":"info","message":"Onboarding successful for john doe","timestamp":"2025-06-21T19:33:08.776Z"}
 {"level":"info","message":"Logout request made","timestamp":"2025-06-21T20:14:22.555Z"}
+{"level":"info","message":"Stream profile is created for Test Test","timestamp":"2025-07-04T18:49:15.433Z"}
+{"level":"info","message":"User registered, welcome! Test Test","timestamp":"2025-07-04T18:49:15.526Z"}
+{"level":"info","message":"Stream profile is created for Test","timestamp":"2025-07-04T18:51:39.421Z"}
+{"level":"info","message":"User registered, welcome! Test","timestamp":"2025-07-04T18:51:39.429Z"}
+{"level":"info","message":"Stream profile is created for Test","timestamp":"2025-07-04T18:56:48.445Z"}
+{"level":"info","message":"User registered, welcome! Test","timestamp":"2025-07-04T18:56:48.452Z"}
+{"level":"info","message":"Stream profile is created for Jane doe","timestamp":"2025-07-04T19:13:49.045Z"}
+{"level":"info","message":"User registered, welcome! Jane doe","timestamp":"2025-07-04T19:13:49.058Z"}
+{"level":"info","message":"Stream profile is created for jane","timestamp":"2025-07-04T19:47:59.271Z"}
+{"level":"info","message":"User registered, welcome! jane","timestamp":"2025-07-04T19:47:59.276Z"}

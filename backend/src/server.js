@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 })
 
 //! Global Api rate Limiter
-app.use("/api", globalApiLimiter)
+app.use("/api/v1", globalApiLimiter)
 
 //routes
 app.use("/api/v1/auth", authRouter);
