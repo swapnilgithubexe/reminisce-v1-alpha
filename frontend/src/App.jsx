@@ -10,14 +10,11 @@ import CallPage from "./pages/CallPage";
 import ChatPage from "./pages/ChatPage";
 import OnBoardingPage from "./pages/OnBoardingPage";
 import { axiosInstance } from "./lib/axios";
+import PageLoader from "./components/PageLoader";
 
 const App = () => {
   //! tanstack setup
-  const {
-    data: authData,
-    isLoading,
-    error,
-  } = useQuery({
+  const { data: authData, isLoading } = useQuery({
     queryKey: ["authUser"],
     queryFn: async () => {
       const res = await axiosInstance.get("/auth/me");
@@ -28,8 +25,10 @@ const App = () => {
 
   const authUser = authData?.user;
 
+  if (isLoading) return <PageLoader />;
+
   return (
-    <div className="bg-red-100 h-screen" data-theme="luxury">
+    <div className="h-screen" data-theme="forest">
       <Routes>
         <Route
           path="/"

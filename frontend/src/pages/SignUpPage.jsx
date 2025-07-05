@@ -61,7 +61,9 @@ const SignUpPage = () => {
             <form onSubmit={handleSubmit}>
               <div className="space-y-4">
                 <div>
-                  <h2 className="text-xl font-semibold">Create an account</h2>
+                  <h2 className="text-xl font-semibold animate-pulse">
+                    Create an account
+                  </h2>
                   <p className="text-sm opacity-70">
                     Join{" "}
                     <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#1fb854] to-[#158a3c]">
