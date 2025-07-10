@@ -102,3 +102,39 @@
 {"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:49:12.314Z"}
 {"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:49:16.672Z"}
 {"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:49:44.124Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:52:40.890Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:52:43.430Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:52:44.906Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T08:52:55.811Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T09:02:12.707Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T09:02:31.103Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T09:03:12.313Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T14:51:08.860Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T16:04:39.121Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T16:04:39.666Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T21:51:09.838Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T21:51:32.770Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T21:51:46.507Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-05T21:52:38.389Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T09:44:41.662Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T09:44:44.146Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T09:44:55.966Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T13:44:05.467Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T17:15:37.681Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T17:27:57.477Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-07T18:00:21.105Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-08T07:22:56.780Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-08T08:02:05.688Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-08T08:35:27.510Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-08T08:35:28.317Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-08T08:46:15.654Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-09T07:46:59.424Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-09T07:47:08.528Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-09T07:47:31.643Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-09T08:05:55.370Z"}
+{"level":"error","message":"All fields are required while onboarding","timestamp":"2025-07-09T10:07:38.425Z"}
+{"level":"error","message":"All fields are required while onboarding","timestamp":"2025-07-09T10:08:16.144Z"}
+{"level":"error","message":"All fields are required while onboarding","timestamp":"2025-07-09T10:09:08.709Z"}
+{"level":"error","message":"User not found","timestamp":"2025-07-10T07:39:24.553Z"}
+{"level":"error","message":"User not found","timestamp":"2025-07-10T07:39:33.000Z"}
+{"level":"error","message":"User not found","timestamp":"2025-07-10T07:43:58.167Z"}

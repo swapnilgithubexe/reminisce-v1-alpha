@@ -157,7 +157,6 @@ const SignUpPage = () => {
                     {isPending ? (
                       <>
                         <span className="loading loading-spinner loading-xs"></span>
-                        Loading...
                       </>
                     ) : (
                       "Create Account"
