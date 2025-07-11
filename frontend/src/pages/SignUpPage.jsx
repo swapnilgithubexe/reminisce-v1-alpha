@@ -13,6 +13,7 @@ const SignUpPage = () => {
 
   const queryClient = useQueryClient();
 
+  //TODO: Optimize the mutation fx using a custom hook
   const {
     mutate: signUpMutation,
     isPending,
@@ -130,11 +131,10 @@ const SignUpPage = () => {
                         })
                       }
                     />
-                    <p className="text-xs opacity-70 mt-1">
-                      Password must be at least 10 characters
+                    <p className="text-xs opacity-70 mt-1 mb-3">
+                      Password must be at least 10 characters long
                     </p>
-
-                    {/* TERMS & CONDITIONS */}
+                    {/* TERMS & CONDITIONS */} {/* EMAIL NOTIFICATIONS */}
                     <div className="form-control">
                       <label className="label cursor-pointer justify-start gap-2">
                         <input
@@ -142,21 +142,39 @@ const SignUpPage = () => {
                           className="checkbox checkbox-sm"
                           required
                         />
-                        <span className="text-primary hover:underline">
-                          terms of service
+                        <span className="text-primary hover:underline text-sm">
+                          Terms of service
                         </span>{" "}
                         &{" "}
-                        <span className="text-primary hover:underline">
+                        <span className="text-primary hover:underline text-sm">
                           privacy policy
                         </span>
+                      </label>
+                      <label className="label cursor-pointer justify-start gap-2">
+                        <input
+                          type="checkbox"
+                          className="checkbox checkbox-sm"
+                        />
+                        <span className="text-primary text-sm">
+                          Recieve notifications via emails
+                        </span>{" "}
+                        & <span className="text-primary text-sm">texts</span>
                       </label>
                     </div>
                   </div>
 
-                  <button className="btn btn-primary w-full" typse="submit">
+                  <button
+                    className="btn btn-primary w-full flex items-center justify-center gap-2"
+                    type="submit"
+                  >
                     {isPending ? (
                       <>
-                        <span className="loading loading-spinner loading-xs"></span>
+                        <span className="text-white">Please wait</span>
+                        <span className="dot-animate flex gap-[2px]">
+                          <span className="w-[4px] h-[4px] bg-white rounded-full animate-bounce [animation-delay:-0.3s]"></span>
+                          <span className="w-[4px] h-[4px] bg-white rounded-full animate-bounce [animation-delay:-0.15s]"></span>
+                          <span className="w-[4px] h-[4px] bg-white rounded-full animate-bounce"></span>
+                        </span>
                       </>
                     ) : (
                       "Create Account"
@@ -164,10 +182,13 @@ const SignUpPage = () => {
                   </button>
 
                   <div className="text-center mt-4">
-                    <p>
+                    <p className="text-sm">
                       Already have an account?{" "}
-                      <Link to="/login" className="hover:underline">
-                        Sign in
+                      <Link
+                        to="/login"
+                        className="text-primary hover:underline"
+                      >
+                        Log in
                       </Link>
                     </p>
                   </div>
