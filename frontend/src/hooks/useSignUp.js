@@ -8,7 +8,7 @@ const useSignUp = () => {
   const { isPending, error, mutate } = useMutation({
     mutationFn: signup,
     onSuccess: () => {
-      toast.success("User logged in successfully!")
+      toast.success("Sign up successful!")
       queryClient.invalidateQueries({ queryKey: ["authUser"] })
     },
     onError: (error) => toast.error(error.response?.data?.message || error.response?.data || "Something went wrong")
