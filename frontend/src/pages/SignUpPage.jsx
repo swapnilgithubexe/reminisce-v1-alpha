@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { MessagesSquare } from "lucide-react";
 import { Link } from "react-router";
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { signup } from "../lib/api";
+import useSignUp from "../hooks/useSignUp";
 
 const SignUpPage = () => {
   const [signUpData, setSignUpData] = useState({
@@ -11,20 +10,22 @@ const SignUpPage = () => {
     password: "",
   });
 
-  const queryClient = useQueryClient();
+  // const queryClient = useQueryClient();
 
   //TODO: Optimize the mutation fx using a custom hook
-  const {
-    mutate: signUpMutation,
-    isPending,
-    error,
-  } = useMutation({
-    mutationFn: signup,
-    onSuccess: () =>
-      queryClient.invalidateQueries({
-        queryKey: ["authUser"],
-      }),
-  });
+  // const {
+  //   mutate: signUpMutation,
+  //   isPending,
+  //   error,
+  // } = useMutation({
+  //   mutationFn: signup,
+  //   onSuccess: () =>
+  //     queryClient.invalidateQueries({
+  //       queryKey: ["authUser"],
+  //     }),
+  // });
+  //! Code optimized using a custom hook
+  const { signUpMutation, isPending, error } = useSignUp();
 
   const handleSubmit = (e) => {
     e.preventDefault();
