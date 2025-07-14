@@ -46,9 +46,9 @@ const Navbar = () => {
           </div>
 
           {/* TODO */}
-          <Palette className="mr-4 btn btn-ghost h-6" />
+          <Palette className="mr-4" />
 
-          <div className="avatar mr-2">
+          <div className="avatar mr-3">
             <div className="w-6 rounded-full opacity-70 hover:opacity-100">
               <img
                 src={authUser?.profilePic}
