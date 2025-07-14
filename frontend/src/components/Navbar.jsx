@@ -3,6 +3,7 @@ import useAuthUser from "../hooks/useAuthUser";
 import { Link, useLocation } from "react-router";
 import uselogOut from "../hooks/useLogout";
 import { BellIcon, LogOutIcon, MessagesSquare, Palette } from "lucide-react";
+import ThemeSelector from "./ThemeSelector";
 // import { toast } from "react-hot-toast";
 // import ThemeSelector from "./ThemeSelector";
 
@@ -39,17 +40,17 @@ const Navbar = () => {
 
           <div className="flex items-center gap-3 sm:gap-4 ml-auto">
             <Link to={"/notifications"}>
-              <button className="btn btn-ghost btn-circle mr-1.5">
+              <button className="btn btn-ghost btn-circle ">
                 <BellIcon className="h-6 w-6 text-base-content opacity-70" />
               </button>
             </Link>
           </div>
 
           {/* TODO */}
-          <Palette className="mr-4" />
+          <ThemeSelector />
 
-          <div className="avatar mr-3">
-            <div className="w-6 rounded-full opacity-70 hover:opacity-100">
+          <div className="avatar mr-1.5">
+            <div className="w-6 rounded-full opacity-70 hover:opacity-100 cursor-pointer">
               <img
                 src={authUser?.profilePic}
                 alt="User Avatar"

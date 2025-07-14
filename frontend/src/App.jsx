@@ -11,16 +11,20 @@ import OnBoardingPage from "./pages/OnBoardingPage";
 import PageLoader from "./components/PageLoader";
 import useAuthUser from "./hooks/useAuthUser";
 import Layout from "./components/Layout";
+import { useThemeStore } from "./store/useThemeStore";
 
 const App = () => {
   const { isLoading, authUser } = useAuthUser();
   const isAuthenticated = Boolean(authUser);
   const isOnboarded = authUser?.isOnBoard;
 
+  //! Theme destructuring from custom hook
+  const { theme } = useThemeStore();
+
   if (isLoading) return <PageLoader />;
 
   return (
-    <div className="h-screen" data-theme="forest">
+    <div className="h-screen" data-theme={theme}>
       <Routes>
         <Route
           path="/"
