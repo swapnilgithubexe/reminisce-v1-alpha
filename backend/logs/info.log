@@ -1,78 +1,93 @@
-{"level":"info","message":"Stream profile is created for John Doe","timestamp":"2025-06-21T09:40:05.302Z"}
-{"level":"info","message":"User registered, welcome! John Doe","timestamp":"2025-06-21T09:40:05.317Z"}
-{"level":"info","message":"John Doe just logged in.","timestamp":"2025-06-21T18:58:20.534Z"}
-{"level":"info","message":"Stream user has been updated successfully for johndoe2","timestamp":"2025-06-21T19:32:06.430Z"}
-{"level":"info","message":"Onboarding successful for johndoe2","timestamp":"2025-06-21T19:32:06.447Z"}
-{"level":"info","message":"Stream user has been updated successfully for john doe","timestamp":"2025-06-21T19:33:08.774Z"}
-{"level":"info","message":"Onboarding successful for john doe","timestamp":"2025-06-21T19:33:08.776Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-06-21T20:14:22.555Z"}
-{"level":"info","message":"Stream profile is created for Test Test","timestamp":"2025-07-04T18:49:15.433Z"}
-{"level":"info","message":"User registered, welcome! Test Test","timestamp":"2025-07-04T18:49:15.526Z"}
-{"level":"info","message":"Stream profile is created for Test","timestamp":"2025-07-04T18:51:39.421Z"}
-{"level":"info","message":"User registered, welcome! Test","timestamp":"2025-07-04T18:51:39.429Z"}
-{"level":"info","message":"Stream profile is created for Test","timestamp":"2025-07-04T18:56:48.445Z"}
-{"level":"info","message":"User registered, welcome! Test","timestamp":"2025-07-04T18:56:48.452Z"}
-{"level":"info","message":"Stream profile is created for Jane doe","timestamp":"2025-07-04T19:13:49.045Z"}
-{"level":"info","message":"User registered, welcome! Jane doe","timestamp":"2025-07-04T19:13:49.058Z"}
-{"level":"info","message":"Stream profile is created for jane","timestamp":"2025-07-04T19:47:59.271Z"}
-{"level":"info","message":"User registered, welcome! jane","timestamp":"2025-07-04T19:47:59.276Z"}
-{"level":"info","message":"Stream profile is created for jane doe","timestamp":"2025-07-04T19:52:28.776Z"}
-{"level":"info","message":"User registered, welcome! jane doe","timestamp":"2025-07-04T19:52:28.782Z"}
-{"level":"info","message":"Stream profile is created for Swapnil","timestamp":"2025-07-05T14:52:31.445Z"}
-{"level":"info","message":"User registered, welcome! Swapnil","timestamp":"2025-07-05T14:52:31.478Z"}
-{"level":"info","message":"Stream profile is created for jane doe","timestamp":"2025-07-08T08:46:43.533Z"}
-{"level":"info","message":"User registered, welcome! jane doe","timestamp":"2025-07-08T08:46:43.546Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T10:09:34.994Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T10:09:34.996Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T10:10:39.848Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T10:10:39.850Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T10:20:02.678Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T10:20:02.681Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T10:22:19.759Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T10:22:19.760Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T10:22:47.048Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T10:22:47.049Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T16:48:19.613Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T16:48:19.614Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T16:58:38.790Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T16:58:38.791Z"}
-{"level":"info","message":"Stream user has been updated successfully for jane doe","timestamp":"2025-07-09T16:58:57.722Z"}
-{"level":"info","message":"Onboarding successful for jane doe","timestamp":"2025-07-09T16:58:57.723Z"}
-{"level":"info","message":"Stream profile is created for Jane doe","timestamp":"2025-07-10T07:44:24.797Z"}
-{"level":"info","message":"User registered, welcome! Jane doe","timestamp":"2025-07-10T07:44:24.970Z"}
-{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-10T07:45:18.882Z"}
-{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-10T07:45:18.901Z"}
-{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-10T07:46:02.345Z"}
-{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-10T07:46:02.346Z"}
-{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-10T08:57:00.122Z"}
-{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-10T08:57:00.138Z"}
-{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-10T09:22:30.331Z"}
-{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-10T09:22:30.332Z"}
-{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-10T09:24:05.719Z"}
-{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-10T09:24:05.720Z"}
-{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-10T09:27:38.485Z"}
-{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-10T09:27:38.487Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-11T17:05:17.365Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-11T17:06:28.506Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-11T17:07:21.356Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-11T17:11:24.434Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-11T17:28:06.190Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-11T20:18:19.254Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:43:18.452Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:43:20.430Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-13T10:44:09.141Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:44:15.008Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:44:36.976Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:44:39.248Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-13T10:57:05.276Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:57:09.016Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T10:57:15.054Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-13T11:00:49.434Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T11:00:52.084Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T11:00:54.031Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T11:00:55.270Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-13T11:04:10.060Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-13T11:04:23.095Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-13T11:05:02.691Z"}
-{"level":"info","message":"Logout request made","timestamp":"2025-07-14T08:58:23.432Z"}
-{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-14T09:01:02.506Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-14T18:38:50.112Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-14T18:38:50.118Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:38:50.132Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:38:50.342Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:38:50.352Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-14T18:39:28.528Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:39:28.532Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-14T18:39:28.533Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:39:28.640Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:39:28.649Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:46:36.424Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-14T18:46:36.427Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-14T18:46:36.429Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T18:46:36.437Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-14T19:16:46.765Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-14T19:16:46.769Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T19:16:46.783Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-14T22:18:26.953Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-14T22:18:27.001Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-14T22:18:27.028Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T07:44:24.054Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:44:24.097Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T07:44:24.268Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T07:44:26.778Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T07:44:26.789Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:44:26.801Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:44:26.949Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:44:26.980Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T07:58:59.305Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T07:58:59.313Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:58:59.317Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:58:59.676Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T07:58:59.686Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T08:14:37.991Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T08:14:37.995Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T08:14:37.996Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T08:27:19.943Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T08:27:19.948Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T08:27:19.949Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T08:59:26.551Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T08:59:26.557Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T08:59:26.563Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T08:59:26.910Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T08:59:26.920Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:08:42.067Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:08:42.074Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:08:42.086Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:08:42.088Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:08:42.140Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:08:42.148Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:08:43.471Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:08:43.474Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:08:43.600Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:15:02.258Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:15:02.282Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:02.284Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:15:18.327Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:15:18.328Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:18.329Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:54.055Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:15:54.068Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:15:54.071Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:54.072Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:54.079Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:54.087Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:15:54.709Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:15:54.710Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:15:54.713Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:22.684Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:16:22.695Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:16:22.696Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:22.698Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:22.706Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:22.716Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:16:33.628Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:16:33.632Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:33.635Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:47.691Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:16:47.702Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:16:47.706Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:47.707Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:47.715Z"}
+{"level":"info","message":"Outgoing requests has been fetched","timestamp":"2025-07-15T09:16:47.722Z"}
+{"level":"info","message":"Friends fetched for undefined","timestamp":"2025-07-15T09:19:39.829Z"}
+{"level":"info","message":"recommended users fetched for Jane doe","timestamp":"2025-07-15T09:19:39.851Z"}
+{"level":"info","message":"A friend request has been sent between Jane doe and john doe","timestamp":"2025-07-15T20:12:23.180Z"}
+{"level":"info","message":"A friend request has been sent between Jane doe and john doe","timestamp":"2025-07-15T20:14:56.101Z"}
+{"level":"info","message":"Stream profile is created for Jane doe","timestamp":"2025-07-15T20:57:03.689Z"}
+{"level":"info","message":"User registered, welcome! Jane doe","timestamp":"2025-07-15T20:57:03.693Z"}
+{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-15T20:57:52.588Z"}
+{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-15T20:57:52.591Z"}
+{"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-15T20:58:00.332Z"}
+{"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-15T20:58:00.333Z"}

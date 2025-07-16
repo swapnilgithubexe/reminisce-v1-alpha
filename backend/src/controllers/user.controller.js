@@ -15,12 +15,11 @@ export const getRecommendedUsers = async (req, res) => {
     const recommendedUsers = await User.find({
       $and: [
         { _id: { $ne: currentUserId } }, //! excluding user
-        { $id: { $nin: currentUser.friends } }, //! for excluding friends of the user,
+        { _id: { $nin: currentUser.friends } }, //! for excluding friends of the user,
         { isOnBoard: true },
       ]
     });
 
-    logger.info(`recommended users fetched for ${currentUser.fullName}`)
 
     res.status(200).json(recommendedUsers);
   } catch (error) {
@@ -35,8 +34,6 @@ export const getMyFriends = async (req, res) => {
   try {
     const user = await User.findById(req.user._id).select("friends").populate("friends", "fullName profilePic nativeLanguage learningLanguage");
 
-    logger.info(`Friends fetched for ${user.fullName}`);
-
     res.status(200).json(user.friends);
   } catch (error) {
     logger.error("Error in get recommended users controller function: ", error.message);
@@ -50,8 +47,12 @@ export const getMyFriends = async (req, res) => {
 export const sendFriendRequest = async (req, res) => {
   try {
     const myId = req.user.id;
+    console.log(myId);
+
 
     const { id: recipientId } = req.params;
+    console.log(recipientId);
+
 
     //!preventing sending req to myself
     if (myId === recipientId) {
@@ -70,7 +71,7 @@ export const sendFriendRequest = async (req, res) => {
     };
 
     //! checking if user is already a friend
-    if (!recipient.friends.includes(myId)) {
+    if (recipient.friends.includes(myId)) {
       logger.error("You are already friends with this user");
       return res.status(400).json({
         message: "You are already friends with this user"
@@ -146,7 +147,6 @@ export const acceptFriendRequest = async (req, res) => {
       $addToSet: { friends: friendRequest.sender }
     })
 
-    logger.info(`Friend request accepted`);
     res.status(200).json({
       message: `Friend request accepted`
     })
@@ -170,7 +170,6 @@ export const getFriendRequests = async (req, res) => {
       status: "accepted"
     }).populate("recipient", "fullName profilePic")
 
-    logger.info("Incoming and Accepted requests have been fetched")
 
     res.status(200).json({
       incomingRequests, acceptedRequests
@@ -188,8 +187,6 @@ export const getOutgoingRequests = async (req, res) => {
       sender: req.user.id,
       status: "pending"
     }).populate("recipient", "fullName profilePic nativaLanguage learningLanguage")
-
-    logger.info("Outgoing requests has been fetched");
 
     res.status(200).json(outgoingRequests);
   } catch (error) {

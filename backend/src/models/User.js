@@ -40,6 +40,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: ""
   },
+  location: {
+    type: String,
+    default: ""
+  },
   isOnBoard: {
     type: Boolean,
     default: false

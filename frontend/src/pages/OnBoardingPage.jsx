@@ -48,8 +48,8 @@ const OnBoardingPage = () => {
   };
 
   const handleRandomAvatar = () => {
-    const idx = Math.floor(Math.random() * 100) + 1; //! includes 1 - 100
-    const randomAvatar = `https://avatar.iran.liara.run/public/${idx}.png`;
+    const seed = Math.floor(Math.random() * 500) + 1; //! includes 1 - 500
+    const randomAvatar = `https://api.dicebear.com/7.x/avataaars/svg?seed=${seed}`;
 
     setFormData({ ...formData, profilePic: randomAvatar });
     toast.success("Random avatar generated");
