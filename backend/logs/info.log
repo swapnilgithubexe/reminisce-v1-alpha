@@ -91,3 +91,5 @@
 {"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-15T20:57:52.591Z"}
 {"level":"info","message":"Stream user has been updated successfully for Jane doe","timestamp":"2025-07-15T20:58:00.332Z"}
 {"level":"info","message":"Onboarding successful for Jane doe","timestamp":"2025-07-15T20:58:00.333Z"}
+{"level":"info","message":"Jane doe just logged in.","timestamp":"2025-07-16T08:57:11.852Z"}
+{"level":"info","message":"A friend request has been sent between Jane doe and john doe","timestamp":"2025-07-16T08:59:43.772Z"}
