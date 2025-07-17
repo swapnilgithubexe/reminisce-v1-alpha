@@ -482,3 +482,7 @@
 {"level":"info","message":"Token has been generated for Jane doe","timestamp":"2025-07-17T18:29:00.471Z"}
 {"level":"info","message":"Stream token generated with userId: 6876c09cb847990f355a96fb at 2025-07-17T18:29:09.502Z","timestamp":"2025-07-17T18:29:09.502Z"}
 {"level":"info","message":"Token has been generated for Jane doe","timestamp":"2025-07-17T18:29:09.505Z"}
+{"level":"info","message":"Stream token generated with userId: 6876c09cb847990f355a96fb at 2025-07-17T20:03:06.752Z","timestamp":"2025-07-17T20:03:06.753Z"}
+{"level":"info","message":"Token has been generated for Jane doe","timestamp":"2025-07-17T20:03:06.760Z"}
+{"level":"info","message":"Stream token generated with userId: 6876c09cb847990f355a96fb at 2025-07-17T20:10:42.534Z","timestamp":"2025-07-17T20:10:42.534Z"}
+{"level":"info","message":"Token has been generated for Jane doe","timestamp":"2025-07-17T20:10:42.537Z"}

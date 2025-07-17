@@ -72,7 +72,7 @@ const App = () => {
           }
         />
         <Route
-          path="/call:id"
+          path="/call/:id"
           element={
             isAuthenticated && isOnboarded ? (
               <CallPage />
