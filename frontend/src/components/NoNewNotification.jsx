@@ -1,5 +1,4 @@
 import { BellIcon } from "lucide-react";
-import React from "react";
 
 const NoNewNotification = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import FlagFunction from "./FlagFunction";
 import { Link } from "react-router";
 import { capitalizeString } from "../lib/capitalize";
