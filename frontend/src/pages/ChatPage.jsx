@@ -72,6 +72,8 @@ const ChatPage = () => {
 
         //! listening to any changes made
         await currentChannel.watch();
+
+        //! documentation
         setChatClient(client);
         setChannel(currentChannel);
       } catch (error) {
@@ -86,6 +88,7 @@ const ChatPage = () => {
   }, [authUser, tokendata, targetUserId]);
 
   const handleVideoCall = () => {
+    //! documentation ref
     if (channel) {
       const callUrl = `${window.location.origin}/call/${channel.id}`;
 
