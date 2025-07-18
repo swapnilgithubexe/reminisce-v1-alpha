@@ -3,6 +3,7 @@ dotenv.config();
 
 import express from "express";
 import cors from "cors";
+import path from 'path';
 
 import { authRouter } from "./routes/auth.route.js";
 import { connectDatabase } from "./lib/db.js";
@@ -13,6 +14,7 @@ import { globalApiLimiter } from "./middlewares/rateLimiter.middleware.js";
 import { chatRouter } from "./routes/chat.route.js";
 
 const app = express();
+const __dirname = path.resolve();
 
 app.use(cors({
   origin: "http://localhost:5173",
@@ -22,7 +24,7 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
-app.get("/", (req, res) => {
+app.get("/health", (req, res) => {
   res.send("Health Check")
 })
 
@@ -34,9 +36,20 @@ app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/users", userRouter);
 app.use("/api/v1/chat", chatRouter);
 
+//! join the frontend and backend in prod env
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+  //! any path other than the above given routes index.html will be returned
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+  })
+}
+
 app.listen(process.env.PORT, () => {
+  console.log(__dirname);
   //TODO: In production mode add the below commented line
-  // logger.info(`Server started at PORT no: ${process.env.PORT}`)
+  logger.info(`Server started at PORT no: ${process.env.PORT}`)
 
   console.log(`Dev Mode -> Server is up and running on PORT no: ${process.env.PORT}`);
   connectDatabase();
