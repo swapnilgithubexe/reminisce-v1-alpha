@@ -6,7 +6,7 @@ import { loginLimiter, registerLimiter } from "../middlewares/rateLimiter.middle
 export const authRouter = express.Router();
 
 authRouter.post("/signup", registerLimiter, signUp);
-authRouter.post("/login", loginLimiter, login);
+authRouter.post("/login", login);
 authRouter.post("/logout", logout);
 
 authRouter.post("/onboarding", protectedRoute, onBoard);
