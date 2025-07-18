@@ -24,3 +24,6 @@
 {"level":"error","message":"User not found","timestamp":"2025-07-18T09:12:01.732Z"}
 {"level":"error","message":"User not found","timestamp":"2025-07-18T09:12:02.855Z"}
 {"level":"error","message":"User not found","timestamp":"2025-07-18T09:17:34.027Z"}
+{"level":"error","message":"User not found","timestamp":"2025-07-18T09:18:23.370Z"}
+{"level":"error","message":"User not found","timestamp":"2025-07-18T09:19:00.077Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-18T09:22:07.326Z"}
