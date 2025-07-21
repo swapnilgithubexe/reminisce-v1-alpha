@@ -27,3 +27,7 @@
 {"level":"error","message":"User not found","timestamp":"2025-07-18T09:18:23.370Z"}
 {"level":"error","message":"User not found","timestamp":"2025-07-18T09:19:00.077Z"}
 {"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-18T09:22:07.326Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-21T18:26:41.882Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-21T18:28:02.841Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-21T18:31:27.437Z"}
+{"level":"error","message":"Unauthorized - No/Invalid token","timestamp":"2025-07-21T18:31:35.416Z"}
