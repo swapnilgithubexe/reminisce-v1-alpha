@@ -23,3 +23,9 @@
 {"level":"info","message":"Onboarding successful for Sneha Roy","timestamp":"2025-07-21T18:29:41.076Z"}
 {"level":"info","message":"A friend request has been sent between Sneha Roy and Swapnil Dutta","timestamp":"2025-07-21T18:31:06.290Z"}
 {"level":"info","message":"Logout request made","timestamp":"2025-07-21T18:31:27.245Z"}
+{"level":"info","message":"Server started at PORT no: 5200","timestamp":"2025-07-21T18:31:49.824Z"}
+{"level":"info","message":"Server started at PORT no: 5200","timestamp":"2025-07-22T18:57:42.941Z"}
+{"level":"info","message":"Server started at PORT no: 5200","timestamp":"2025-07-23T17:11:43.606Z"}
+{"level":"info","message":"Swapnil Dutta just logged in.","timestamp":"2025-07-23T17:31:22.757Z"}
+{"level":"info","message":"Stream token generated with userId: 68796af1344d4ef00966479e at 2025-07-23T17:33:44.820Z","timestamp":"2025-07-23T17:33:44.820Z"}
+{"level":"info","message":"Token has been generated for Swapnil Dutta","timestamp":"2025-07-23T17:33:44.824Z"}
