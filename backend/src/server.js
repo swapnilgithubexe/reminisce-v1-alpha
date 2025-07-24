@@ -16,10 +16,14 @@ import { chatRouter } from "./routes/chat.route.js";
 const app = express();
 const __dirname = path.resolve();
 
+// app.use(cors({
+//   origin: "http://localhost:5173",
+//   credentials: true //! allowing incoming cookies
+// }))
 app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true //! allowing incoming cookies
-}))
+  origin: ["https://reminisce-v1-alpha.onrender.com", "http://localhost:5173"],
+  credentials: true, //! allowing incoming requests
+}));
 
 app.use(express.json());
 app.use(cookieParser());
